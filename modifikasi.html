@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+ * { 
+   border: 2px solid #dedede; 
+   padding: 15px; 
+   margin: 15px; 
+ }
+ html { 
+   margin: 0;
+   padding: 0;
+ }
+ body { 
+   max-width: 600px;
+   margin: 30px auto;
+   font-family: sans-serif;
+   color: #333;
+ }
+ div {
+   background-color: #add8e6; /* Warna biru muda */
+ }
+</style>
+</head>
+<body>
+ <h1 id="h1"> Judul </h1>
+ <div id="container1">
+   <section id="a">
+     <p> Paragraf 1 </p>
+     <p> Paragraf 2 </p>
+     <a href="#">Link</a>
+   </section>
+ </div>
+ <div id="container2">
+   <ul>
+     <li class="list"> List 1 </li>
+     <li class="list"> List 2 </li>
+     <li class="list"> List 3 </li>
+   </ul>
+ </div>
+ <script>
+   // Mengubah atribut href pada tag <a>
+   const link = document.querySelector("a");
+   link.href = "https://www.google.com";
+
+   // Menggunakan loop untuk memodifikasi elemen
+   const elements = document.querySelectorAll("p, li");
+   elements.forEach((element, index) => {
+     // Ubah teks
+     element.textContent += ` (updated ${index + 1})`;
+
+     // Ubah gaya
+     element.style.fontSize = "18px";
+     element.style.color = "#ff4500"; // Warna oranye terang
+
+     // Ubah warna latar belakang
+     element.style.backgroundColor = index % 2 === 0 ? "#e0ffff" : "#ffe4e1"; // Alternatif warna
+   });
+ </script>
+</body>
+</html>
