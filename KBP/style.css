@@ -1,0 +1,131 @@
+body {
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+h1, h2 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2); /* Transparansi untuk memadukan dengan background */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ff914d;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #ffa859;
+    transform: translateY(-3px);
+}
+
+.list-group-item {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.list-group-item.completed .todo-text {
+    text-decoration: line-through;
+    color: #8e8e8e;
+}
+
+input {
+    border: 2px solid #ff914d;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+#timer-display {
+    font-size: 6rem; /* Membuat font lebih besar */
+    font-weight: bold;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Menambahkan bayangan lebih halus */
+    color: #ff914d; /* Memberikan warna yang kontras dengan background */
+    background-color: rgba(255, 255, 255, 0.6); /* Background lebih cerah agar timer lebih menonjol */
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Menambahkan efek bayangan di luar */
+}
+
+#play-spotify {
+    margin-top: 20px;
+}
+
+#todo-input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 2px solid #ff914d;
+    margin-bottom: 10px;
+}
+
+#add-todo {
+    background-color: #ff914d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#add-todo:hover {
+    background-color: #ffa859;
+}
+
+.list-group-item {
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-group-item.completed {
+    background: rgba(144, 238, 144, 0.8); /* Green */
+    text-decoration: line-through;
+}
+
+button.complete-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
