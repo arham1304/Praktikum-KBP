@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>FIGHTING!</h1>
+        <p>Kalau Orang Lain Bisa, Kenapa Kamu Ga Bisa?</p>
+    </header>
+    <main class="main-container">
+        <section class="study-clock">
+            <h2 class="section-title">STUDY CLOCK</h2>
+            <form id="pomodoro-settings-form">
+                <div class="form-row">
+                    <label for="study-time">Study Time (minutes):</label>
+                    <input type="number" id="study-time" value="25">
+                </div>
+                <div class="form-row">
+                    <label for="break-time">Break Time (minutes):</label>
+                    <input type="number" id="break-time" value="5">
+                </div>
+                <button type="submit" class="btn btn-primary responsive-btn">Save Settings</button>
+            </form>
+            <div id="timer-display">25:00</div>
+            <div class="timer-controls">
+                <button id="start-timer" class="btn btn-success responsive-btn">Start Timer</button>
+                <button id="stop-timer" class="btn btn-danger responsive-btn">Stop Timer</button>
+            </div>
+        </section>
+
+        <section class="tasks">
+            <h2 class="section-title">TASKS</h2>
+            <div class="todo-input-container">
+                <input type="text" id="todo-input" placeholder="Enter a new task">
+                <button id="add-todo" class="btn btn-primary responsive-btn">Add</button>
+            </div>
+            <ul id="todo-list" class="list-group"></ul>
+        </section>
+
+        <section class="learning-resources">
+            <h2 class="section-title">FOCUS MUSIC</h2>
+            <div id="spotify-embed-container"></div>
+        </section>
+
+        <!-- Statistik Section -->
+        <section class="statistics">
+            <h2 class="section-title">LEARNING STATISTICS</h2>
+            <div class="stats-bar">
+                <div class="bar study-time">
+                    <span class="stat-label">0% Study Time</span>
+                </div>
+                <div class="bar tasks-completed">
+                    <span class="stat-label">0% Tasks Completed</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
